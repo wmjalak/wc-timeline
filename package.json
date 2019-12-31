@@ -1,0 +1,43 @@
+{
+  "name": "wc-timeline",
+  "version": "1.0.0",
+  "description": "Web component that shows a timeline on LitElement",
+  "main": "src/index.js",
+  "module": "src/social-icon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start2": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start": "webpack-dev-server --open -d",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "timeline",
+    "webcomponent",
+    "litelement"
+  ],
+  "author": "wmjalak",
+  "license": "MIT",
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "lit-element": "^2.2.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "url-loader": "^3.0.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
