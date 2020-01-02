@@ -1,43 +1,29 @@
 {
   "name": "wc-timeline",
   "version": "1.0.0",
-  "description": "Web component that shows a timeline on LitElement",
-  "main": "src/index.js",
-  "module": "src/social-icon.js",
+  "description": "A lit-element typescript boilerplate, packed with webpack",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start2": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
-    "start": "webpack-dev-server --open -d",
-    "build": "webpack --mode production"
+    "build": "webpack",
+    "test": "npm run build && node serve.js",
+    "dev": "webpack-dev-server"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "keywords": [
-    "timeline",
-    "webcomponent",
-    "litelement"
-  ],
   "author": "wmjalak",
   "license": "MIT",
-  "dependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.1",
-    "css-loader": "^3.4.0",
-    "file-loader": "^5.0.2",
-    "html-webpack-plugin": "^3.2.0",
-    "lit-element": "^2.2.0",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.1.2",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4",
-    "url-loader": "^3.0.0"
-  },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^2.2.10",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.8.0"
+    "@types/node": "^12.12.17",
+    "awesome-typescript-loader": "^5.2.1",
+    "express": "^4.17.1",
+    "tslib": "^1.10.0",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.7.3",
+    "typescript-tslint-plugin": "^0.5.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1"
   }
 }
